@@ -1,0 +1,61 @@
+{
+  "LF3": [
+    {
+      "LF3 Actual NCF": {
+        "id": "2064506293",
+        "column_data": [
+          {
+            "id": "regular_principal__actual_",
+            "title": "Regular Principal (Actual)"
+          },
+          {
+            "id": "regular_interest__actual_",
+            "title": "Regular Interest (Actual)"
+          },
+          {
+            "id": "dup__of_regular_interest__actual_",
+            "title": "Total Partnership Expense"
+          },
+          {
+            "id": "net_cash_burn_flow",
+            "title": "Net Cash Burn/Flow"
+          },
+          {
+            "id": "dup__of_net_cash_burn_flow",
+            "title": "Cumulative Net Cash Flow"
+          }
+        ]
+      }
+    }
+  ],
+  "LOF2": [
+    {
+      "LOF2 Actual NCF": {
+        "id": "2064129923",
+        "column_data": [
+          {
+            "id": "regular_principal__actual_",
+            "title": "Regular Principal (Actual)"
+          },
+          {
+            "id": "regular_interest__actual_",
+            "title": "Regular Interest (Actual)"
+          },
+          {
+            "id": "dup__of_regular_interest__actual_",
+            "title": "Total Partnership Expense"
+          },
+          {
+            "id": "net_cash_burn_flow",
+            "title": "Net Cash Burn/Flow"
+          },
+          {
+            "id": "dup__of_net_cash_burn_flow",
+            "title": "Cumulative Net Cash Flow"
+          }
+        ]
+      }
+    }
+  ],
+  "ACCEL 2": []
+}

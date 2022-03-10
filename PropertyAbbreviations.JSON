@@ -1,0 +1,94 @@
+{
+  "lof2": [
+    {
+      "Country Inn & Suites Lincoln North Hotel & Conference Center": "LCN"
+    },
+    {
+      "Homewood Suites by Hilton Virginia Beach/Norfolk Airport": "VAB"
+    },
+    {
+      "Hyatt Place Austin Airport": "AUS"
+    },
+    {
+      "Homewood Suites by Hilton Tyler": "TYL-HWD"
+    },
+    {
+      "Hilton Garden Inn Chicago Tinley Park": "TNY"
+    },
+    {
+      "SpringHill Suites Chicago Lincolnshire": "LSH"
+    },
+    {
+      "Country Inn & Suites Minneapolis West": "PLY"
+    },
+    {
+      "Staybridge Suites Wilmington - Wrightsville Bch": "WMT"
+    },
+    {
+      "Delta Hotel Grand Rapids Airport": "GNR"
+    },
+    {
+      "Fairfield Inn & Suites Green Bay Southwest": "GBF"
+    },
+    {
+      "Holiday Inn Express Indianapolis Southeast": "IDY"
+    },
+    {
+      "Courtyard Austin Round Rock": "RRK"
+    },
+    {
+      "Hilton Garden Inn Tyler": "TYL-HGI"
+    },
+    {
+      "Holiday Inn Colorado Springs Airport": "COS"
+    },
+    {
+      "Delta Hotel Green Bay": "GBD"
+    }
+  ],
+  "lf3": [
+    {
+      "Holiday Inn Express Cedar Rapids (Collins Rd)": "CDR"
+    },
+    {
+      "Hampton Inn Minneapolis/Eagan": "EAG"
+    },
+    {
+      "Hampton Inn & Suites Charlotte/Pineville": "PNV"
+    },
+    {
+      "Fairfield Inn & Suites Lubbock Southwest": "LBK-FFI"
+    },
+    {
+      "Home2 Suites by Hilton Lubbock": "LBK-H2"
+    },
+    {
+      "Home2 Suites by Hilton Prattville": "PTV"
+    },
+    {
+      "Homewood Suites by Hilton Southaven": "SHV"
+    },
+    {
+      "Courtyard Denver Aurora": "AUR"
+    },
+    {
+      "Holiday Inn El Paso West Sunland Park": "ELP"
+    },
+    {
+      "Hilton Garden Inn Houston Bush Intercontinental Airport": "HST"
+    },
+    {
+      "Sheraton Hotel Chicago Northbrook": "NBK"
+    }
+  ],
+  "VAB QOZ": [
+    {
+      "Crowne Plaza Virginia Beach Town Center": "VAB"
+    }
+  ],
+  "Accel 2": [
+    {
+      "Avid Memphis Southaven": "SHV-AVD"
+    }
+  ]
+}
