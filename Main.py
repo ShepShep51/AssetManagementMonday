@@ -46,7 +46,7 @@ def dataUploadOption():
         ...
     elif upload == '2':
         print("Which fund are you uploading?")
-        fund = input("Press [2] for LOF2, or [3] for LF3 ")
+        fund = input("Press [2] for LOF2, [3] for LF3, [4] for Accel 2, or [5] for VAB QOZ: ")
         choices = {'Upload Type': upload,
                    'Fund': fund,
                    'Timeframe': None}
@@ -802,6 +802,18 @@ def Main():
                 limit, group_name = grandTotalDataPost(worksheet_object=ws, format_list=gt_board_format)
                 propertyDataPost(worksheet_object=ws, last_column=limit, format_list=property_board_format,
                                  name_of_group=group_name)
+            elif op['Fund'] == '4':
+                c_lims = [2,12]
+                actual_group_name, act_data = actualData(worksheet_object=ws,column_limits=c_lims)
+                property_board_format = financial_board_format['Accel II'][:3]
+                propertyDataPost(worksheet_object=ws, last_column=c_lims[1], format_list=property_board_format,name_of_group=actual_group_name)
+                # Accel II
+            elif op['Fund'] == '5':
+                # VAB QOZ
+                c_lims = [2,12]
+                actual_group_name, act_data = actualData(worksheet_object=ws, column_limits=c_lims)
+                property_board_format = financial_board_format['VABQOZ'][:3]
+                propertyDataPost(worksheet_object=ws, last_column=c_lims[1], format_list=property_board_format,name_of_group=actual_group_name)
                 ...
         elif op['Upload Type'] == '3':
             if op['Fund'] == '2':

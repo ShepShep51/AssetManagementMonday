@@ -2198,5 +2198,1107 @@
         ]
       }
     }
+  ],
+  "VABQOZ": [
+    {
+      "VABQOZ - Actuals": {
+        "id": "2402943642",
+        "columns": [
+          {
+            "title": "Actual - Room Revenue",
+            "id": "actual___room_revenue"
+          },
+          {
+            "title": "Forecast - Room Revenue",
+            "id": "forecast___room_revenue"
+          },
+          {
+            "title": "Budget - Room Revenue",
+            "id": "budget___room_revenue"
+          },
+          {
+            "title": "Last Year - Room Revenue",
+            "id": "last_year___room_revenue"
+          },
+          {
+            "title": "Actual - Total Revenue",
+            "id": "actual___total_revenue"
+          },
+          {
+            "title": "Forecast - Total Revenue",
+            "id": "forecast___total_revenue"
+          },
+          {
+            "title": "Budget - Total Revenue",
+            "id": "budget___total_revenue"
+          },
+          {
+            "title": "Last Year - Total Revenue",
+            "id": "last_year___total_revenue"
+          },
+          {
+            "title": "Actual - Rooms Expense",
+            "id": "actual___rooms_expense"
+          },
+          {
+            "title": "Forecast - Rooms Expense",
+            "id": "forecast___rooms_expense"
+          },
+          {
+            "title": "Budget - Rooms Expense",
+            "id": "budget___rooms_expense"
+          },
+          {
+            "title": "Last Year - Rooms Expense",
+            "id": "last_year___rooms_expense"
+          },
+          {
+            "title": "Actual - Total Dept Expense",
+            "id": "actual___total_dept_expense"
+          },
+          {
+            "title": "Forecast - Total Dept Expense",
+            "id": "forecast___total_dept_expense"
+          },
+          {
+            "title": "Budget - Total Dept Expense",
+            "id": "budget___total_dept_expense"
+          },
+          {
+            "title": "Last Year - Total Dept Expense",
+            "id": "last_year___total_dept_expense"
+          },
+          {
+            "title": "Actual - Operating Expense",
+            "id": "actual___operating_expense"
+          },
+          {
+            "title": "Forecast - Operating Expense",
+            "id": "forecast___operating_expense"
+          },
+          {
+            "title": "Budget - Operating Expense",
+            "id": "budget___operating_expense"
+          },
+          {
+            "title": "Last Year - Operating Expense",
+            "id": "last_year___operating_expense"
+          },
+          {
+            "title": "Actual - House Profit",
+            "id": "actual___house_profit"
+          },
+          {
+            "title": "Forecast - House Profit",
+            "id": "forecast___house_profit"
+          },
+          {
+            "title": "Budget - House Profit",
+            "id": "budget___house_profit"
+          },
+          {
+            "title": "Last Year - House Profit",
+            "id": "last_year___house_profit"
+          },
+          {
+            "title": "Actual - Fixed Expense",
+            "id": "actual___fixed_expense"
+          },
+          {
+            "title": "Forecast - Fixed Expense",
+            "id": "forecast___fixed_expense"
+          },
+          {
+            "title": "Budget - Fixed Expense",
+            "id": "budget___fixed_expense"
+          },
+          {
+            "title": "Last Year - Fixed Expense",
+            "id": "last_year___fixed_expense"
+          },
+          {
+            "title": "Actual - NOI B4 Interest/Other",
+            "id": "actual___noi_b4_interest_other"
+          },
+          {
+            "title": "Forecast - NOI B4 Interest/Other",
+            "id": "forecast___noi_b4_interest_other"
+          },
+          {
+            "title": "Budget - NOI B4 Interest/Other",
+            "id": "budget___noi_b4_interest_other"
+          },
+          {
+            "title": "Last Year - NOI B4 Interest/Other",
+            "id": "last_year___noi_b4_interest_other"
+          },
+          {
+            "title": "Actual - NOI",
+            "id": "actual___noi"
+          },
+          {
+            "title": "Forecast - NOI",
+            "id": "forecast___noi"
+          },
+          {
+            "title": "Budget - NOI",
+            "id": "budget___noi"
+          },
+          {
+            "title": "Last Year - NOI",
+            "id": "last_year___noi"
+          },
+          {
+            "title": "Actual - Owner Expense",
+            "id": "actual___owner_expense"
+          },
+          {
+            "title": "Forecast - Owner Expense",
+            "id": "forecast___owner_expense"
+          },
+          {
+            "title": "Budget - Owner Expense",
+            "id": "budget___owner_expense"
+          },
+          {
+            "title": "Last Year - Owner Expense",
+            "id": "last_year___owner_expense"
+          },
+          {
+            "title": "Actual - Net Income",
+            "id": "actual___net_income"
+          },
+          {
+            "title": "Forecast - Net Income",
+            "id": "forecast___net_income"
+          },
+          {
+            "title": "Budget - Net Income",
+            "id": "budget___net_income"
+          },
+          {
+            "title": "Last Year - Net Income",
+            "id": "last_year___net_income"
+          }
+        ]
+      }
+    },
+    {
+      "VABQOZ - POR": {
+        "id": "2402944739",
+        "columns": [
+          {
+            "title": "Actual - Room Revenue",
+            "id": "actual___room_revenue"
+          },
+          {
+            "title": "Forecast - Room Revenue",
+            "id": "forecast___room_revenue"
+          },
+          {
+            "title": "Budget - Room Revenue",
+            "id": "budget___room_revenue"
+          },
+          {
+            "title": "Last Year - Room Revenue",
+            "id": "last_year___room_revenue"
+          },
+          {
+            "title": "Actual - Total Revenue",
+            "id": "actual___total_revenue"
+          },
+          {
+            "title": "Forecast - Total Revenue",
+            "id": "forecast___total_revenue"
+          },
+          {
+            "title": "Budget - Total Revenue",
+            "id": "budget___total_revenue"
+          },
+          {
+            "title": "Last Year - Total Revenue",
+            "id": "last_year___total_revenue"
+          },
+          {
+            "title": "Actual - Rooms Expense",
+            "id": "actual___rooms_expense"
+          },
+          {
+            "title": "Forecast - Rooms Expense",
+            "id": "forecast___rooms_expense"
+          },
+          {
+            "title": "Budget - Rooms Expense",
+            "id": "budget___rooms_expense"
+          },
+          {
+            "title": "Last Year - Rooms Expense",
+            "id": "last_year___rooms_expense"
+          },
+          {
+            "title": "Actual - Total Dept Expense",
+            "id": "actual___total_dept_expense"
+          },
+          {
+            "title": "Forecast - Total Dept Expense",
+            "id": "forecast___total_dept_expense"
+          },
+          {
+            "title": "Budget - Total Dept Expense",
+            "id": "budget___total_dept_expense"
+          },
+          {
+            "title": "Last Year - Total Dept Expense",
+            "id": "last_year___total_dept_expense"
+          },
+          {
+            "title": "Actual - Operating Expense",
+            "id": "actual___operating_expense"
+          },
+          {
+            "title": "Forecast - Operating Expense",
+            "id": "forecast___operating_expense"
+          },
+          {
+            "title": "Budget - Operating Expense",
+            "id": "budget___operating_expense"
+          },
+          {
+            "title": "Last Year - Operating Expense",
+            "id": "last_year___operating_expense"
+          },
+          {
+            "title": "Actual - House Profit",
+            "id": "actual___house_profit"
+          },
+          {
+            "title": "Forecast - House Profit",
+            "id": "forecast___house_profit"
+          },
+          {
+            "title": "Budget - House Profit",
+            "id": "budget___house_profit"
+          },
+          {
+            "title": "Last Year - House Profit",
+            "id": "last_year___house_profit"
+          },
+          {
+            "title": "Actual - Fixed Expense",
+            "id": "actual___fixed_expense"
+          },
+          {
+            "title": "Forecast - Fixed Expense",
+            "id": "forecast___fixed_expense"
+          },
+          {
+            "title": "Budget - Fixed Expense",
+            "id": "budget___fixed_expense"
+          },
+          {
+            "title": "Last Year - Fixed Expense",
+            "id": "last_year___fixed_expense"
+          },
+          {
+            "title": "Actual - NOI B4 Interest/Other",
+            "id": "actual___noi_b4_interest_other"
+          },
+          {
+            "title": "Forecast - NOI B4 Interest/Other",
+            "id": "forecast___noi_b4_interest_other"
+          },
+          {
+            "title": "Budget - NOI B4 Interest/Other",
+            "id": "budget___noi_b4_interest_other"
+          },
+          {
+            "title": "Last Year - NOI B4 Interest/Other",
+            "id": "last_year___noi_b4_interest_other"
+          },
+          {
+            "title": "Actual - NOI",
+            "id": "actual___noi"
+          },
+          {
+            "title": "Forecast - NOI",
+            "id": "forecast___noi"
+          },
+          {
+            "title": "Budget - NOI",
+            "id": "budget___noi"
+          },
+          {
+            "title": "Last Year - NOI",
+            "id": "last_year___noi"
+          },
+          {
+            "title": "Actual - Owner Expense",
+            "id": "actual___owner_expense"
+          },
+          {
+            "title": "Forecast - Owner Expense",
+            "id": "forecast___owner_expense"
+          },
+          {
+            "title": "Budget - Owner Expense",
+            "id": "budget___owner_expense"
+          },
+          {
+            "title": "Last Year - Owner Expense",
+            "id": "last_year___owner_expense"
+          },
+          {
+            "title": "Actual - Net Income",
+            "id": "actual___net_income"
+          },
+          {
+            "title": "Forecast - Net Income",
+            "id": "forecast___net_income"
+          },
+          {
+            "title": "Budget - Net Income",
+            "id": "budget___net_income"
+          },
+          {
+            "title": "Last Year - Net Income",
+            "id": "last_year___net_income"
+          }
+        ]
+      }
+    },
+    {
+      "VABQOZ - % Rev": {
+        "id": "2402946266",
+        "columns": [
+          {
+            "title": "Actual - Room Revenue",
+            "id": "actual___room_revenue"
+          },
+          {
+            "title": "Forecast - Room Revenue",
+            "id": "forecast___room_revenue"
+          },
+          {
+            "title": "Budget - Room Revenue",
+            "id": "budget___room_revenue"
+          },
+          {
+            "title": "Last Year - Room Revenue",
+            "id": "last_year___room_revenue"
+          },
+          {
+            "title": "Actual - Total Revenue",
+            "id": "actual___total_revenue"
+          },
+          {
+            "title": "Forecast - Total Revenue",
+            "id": "forecast___total_revenue"
+          },
+          {
+            "title": "Budget - Total Revenue",
+            "id": "budget___total_revenue"
+          },
+          {
+            "title": "Last Year - Total Revenue",
+            "id": "last_year___total_revenue"
+          },
+          {
+            "title": "Actual - Rooms Expense",
+            "id": "actual___rooms_expense"
+          },
+          {
+            "title": "Forecast - Rooms Expense",
+            "id": "forecast___rooms_expense"
+          },
+          {
+            "title": "Budget - Rooms Expense",
+            "id": "budget___rooms_expense"
+          },
+          {
+            "title": "Last Year - Rooms Expense",
+            "id": "last_year___rooms_expense"
+          },
+          {
+            "title": "Actual - Total Dept Expense",
+            "id": "actual___total_dept_expense"
+          },
+          {
+            "title": "Forecast - Total Dept Expense",
+            "id": "forecast___total_dept_expense"
+          },
+          {
+            "title": "Budget - Total Dept Expense",
+            "id": "budget___total_dept_expense"
+          },
+          {
+            "title": "Last Year - Total Dept Expense",
+            "id": "last_year___total_dept_expense"
+          },
+          {
+            "title": "Actual - Operating Expense",
+            "id": "actual___operating_expense"
+          },
+          {
+            "title": "Forecast - Operating Expense",
+            "id": "forecast___operating_expense"
+          },
+          {
+            "title": "Budget - Operating Expense",
+            "id": "budget___operating_expense"
+          },
+          {
+            "title": "Last Year - Operating Expense",
+            "id": "last_year___operating_expense"
+          },
+          {
+            "title": "Actual - House Profit",
+            "id": "actual___house_profit"
+          },
+          {
+            "title": "Forecast - House Profit",
+            "id": "forecast___house_profit"
+          },
+          {
+            "title": "Budget - House Profit",
+            "id": "budget___house_profit"
+          },
+          {
+            "title": "Last Year - House Profit",
+            "id": "last_year___house_profit"
+          },
+          {
+            "title": "Actual - Fixed Expense",
+            "id": "actual___fixed_expense"
+          },
+          {
+            "title": "Forecast - Fixed Expense",
+            "id": "forecast___fixed_expense"
+          },
+          {
+            "title": "Budget - Fixed Expense",
+            "id": "budget___fixed_expense"
+          },
+          {
+            "title": "Last Year - Fixed Expense",
+            "id": "last_year___fixed_expense"
+          },
+          {
+            "title": "Actual - NOI B4 Interest/Other",
+            "id": "actual___noi_b4_interest_other"
+          },
+          {
+            "title": "Forecast - NOI B4 Interest/Other",
+            "id": "forecast___noi_b4_interest_other"
+          },
+          {
+            "title": "Budget - NOI B4 Interest/Other",
+            "id": "budget___noi_b4_interest_other"
+          },
+          {
+            "title": "Last Year - NOI B4 Interest/Other",
+            "id": "last_year___noi_b4_interest_other"
+          },
+          {
+            "title": "Actual - NOI",
+            "id": "actual___noi"
+          },
+          {
+            "title": "Forecast - NOI",
+            "id": "forecast___noi"
+          },
+          {
+            "title": "Budget - NOI",
+            "id": "budget___noi"
+          },
+          {
+            "title": "Last Year - NOI",
+            "id": "last_year___noi"
+          },
+          {
+            "title": "Actual - Owner Expense",
+            "id": "actual___owner_expense"
+          },
+          {
+            "title": "Forecast - Owner Expense",
+            "id": "forecast___owner_expense"
+          },
+          {
+            "title": "Budget - Owner Expense",
+            "id": "budget___owner_expense"
+          },
+          {
+            "title": "Last Year - Owner Expense",
+            "id": "last_year___owner_expense"
+          },
+          {
+            "title": "Actual - Net Income",
+            "id": "actual___net_income"
+          },
+          {
+            "title": "Forecast - Net Income",
+            "id": "forecast___net_income"
+          },
+          {
+            "title": "Budget - Net Income",
+            "id": "budget___net_income"
+          },
+          {
+            "title": "Last Year - Net Income",
+            "id": "last_year___net_income"
+          }
+        ]
+      }
+    }
+  ],
+  "Accel II": [
+    {
+      "Accel II Properties - Actuals": {
+        "id": "2402933684",
+        "columns": [
+          {
+            "title": "Actual - Room Revenue",
+            "id": "actual___room_revenue"
+          },
+          {
+            "title": "Forecast - Room Revenue",
+            "id": "forecast___room_revenue"
+          },
+          {
+            "title": "Budget - Room Revenue",
+            "id": "budget___room_revenue"
+          },
+          {
+            "title": "Last Year - Room Revenue",
+            "id": "last_year___room_revenue"
+          },
+          {
+            "title": "Actual - Total Revenue",
+            "id": "actual___total_revenue"
+          },
+          {
+            "title": "Forecast - Total Revenue",
+            "id": "forecast___total_revenue"
+          },
+          {
+            "title": "Budget - Total Revenue",
+            "id": "budget___total_revenue"
+          },
+          {
+            "title": "Last Year - Total Revenue",
+            "id": "last_year___total_revenue"
+          },
+          {
+            "title": "Actual - Rooms Expense",
+            "id": "actual___rooms_expense"
+          },
+          {
+            "title": "Forecast - Rooms Expense",
+            "id": "forecast___rooms_expense"
+          },
+          {
+            "title": "Budget - Rooms Expense",
+            "id": "budget___rooms_expense"
+          },
+          {
+            "title": "Last Year - Rooms Expense",
+            "id": "last_year___rooms_expense"
+          },
+          {
+            "title": "Actual - Total Dept Expense",
+            "id": "actual___total_dept_expense"
+          },
+          {
+            "title": "Forecast - Total Dept Expense",
+            "id": "forecast___total_dept_expense"
+          },
+          {
+            "title": "Budget - Total Dept Expense",
+            "id": "budget___total_dept_expense"
+          },
+          {
+            "title": "Last Year - Total Dept Expense",
+            "id": "last_year___total_dept_expense"
+          },
+          {
+            "title": "Actual - Operating Expense",
+            "id": "actual___operating_expense"
+          },
+          {
+            "title": "Forecast - Operating Expense",
+            "id": "forecast___operating_expense"
+          },
+          {
+            "title": "Budget - Operating Expense",
+            "id": "budget___operating_expense"
+          },
+          {
+            "title": "Last Year - Operating Expense",
+            "id": "last_year___operating_expense"
+          },
+          {
+            "title": "Actual - House Profit",
+            "id": "actual___house_profit"
+          },
+          {
+            "title": "Forecast - House Profit",
+            "id": "forecast___house_profit"
+          },
+          {
+            "title": "Budget - House Profit",
+            "id": "budget___house_profit"
+          },
+          {
+            "title": "Last Year - House Profit",
+            "id": "last_year___house_profit"
+          },
+          {
+            "title": "Actual - Fixed Expense",
+            "id": "actual___fixed_expense"
+          },
+          {
+            "title": "Forecast - Fixed Expense",
+            "id": "forecast___fixed_expense"
+          },
+          {
+            "title": "Budget - Fixed Expense",
+            "id": "budget___fixed_expense"
+          },
+          {
+            "title": "Last Year - Fixed Expense",
+            "id": "last_year___fixed_expense"
+          },
+          {
+            "title": "Actual - NOI B4 Interest/Other",
+            "id": "actual___noi_b4_interest_other"
+          },
+          {
+            "title": "Forecast - NOI B4 Interest/Other",
+            "id": "forecast___noi_b4_interest_other"
+          },
+          {
+            "title": "Budget - NOI B4 Interest/Other",
+            "id": "budget___noi_b4_interest_other"
+          },
+          {
+            "title": "Last Year - NOI B4 Interest/Other",
+            "id": "last_year___noi_b4_interest_other"
+          },
+          {
+            "title": "Actual - NOI",
+            "id": "actual___noi"
+          },
+          {
+            "title": "Forecast - NOI",
+            "id": "forecast___noi"
+          },
+          {
+            "title": "Budget - NOI",
+            "id": "budget___noi"
+          },
+          {
+            "title": "Last Year - NOI",
+            "id": "last_year___noi"
+          },
+          {
+            "title": "Actual - Owner Expense",
+            "id": "actual___owner_expense"
+          },
+          {
+            "title": "Forecast - Owner Expense",
+            "id": "forecast___owner_expense"
+          },
+          {
+            "title": "Budget - Owner Expense",
+            "id": "budget___owner_expense"
+          },
+          {
+            "title": "Last Year - Owner Expense",
+            "id": "last_year___owner_expense"
+          },
+          {
+            "title": "Actual - Net Income",
+            "id": "actual___net_income"
+          },
+          {
+            "title": "Forecast - Net Income",
+            "id": "forecast___net_income"
+          },
+          {
+            "title": "Budget - Net Income",
+            "id": "budget___net_income"
+          },
+          {
+            "title": "Last Year - Net Income",
+            "id": "last_year___net_income"
+          }
+        ]
+      }
+    },
+    {
+      "Accel II Properties - POR": {
+        "id": "2402923895",
+        "columns": [
+          {
+            "title": "Actual - Room Revenue",
+            "id": "actual___room_revenue"
+          },
+          {
+            "title": "Forecast - Room Revenue",
+            "id": "forecast___room_revenue"
+          },
+          {
+            "title": "Budget - Room Revenue",
+            "id": "budget___room_revenue"
+          },
+          {
+            "title": "Last Year - Room Revenue",
+            "id": "last_year___room_revenue"
+          },
+          {
+            "title": "Actual - Total Revenue",
+            "id": "actual___total_revenue"
+          },
+          {
+            "title": "Forecast - Total Revenue",
+            "id": "forecast___total_revenue"
+          },
+          {
+            "title": "Budget - Total Revenue",
+            "id": "budget___total_revenue"
+          },
+          {
+            "title": "Last Year - Total Revenue",
+            "id": "last_year___total_revenue"
+          },
+          {
+            "title": "Actual - Rooms Expense",
+            "id": "actual___rooms_expense"
+          },
+          {
+            "title": "Forecast - Rooms Expense",
+            "id": "forecast___rooms_expense"
+          },
+          {
+            "title": "Budget - Rooms Expense",
+            "id": "budget___rooms_expense"
+          },
+          {
+            "title": "Last Year - Rooms Expense",
+            "id": "last_year___rooms_expense"
+          },
+          {
+            "title": "Actual - Total Dept Expense",
+            "id": "actual___total_dept_expense"
+          },
+          {
+            "title": "Forecast - Total Dept Expense",
+            "id": "forecast___total_dept_expense"
+          },
+          {
+            "title": "Budget - Total Dept Expense",
+            "id": "budget___total_dept_expense"
+          },
+          {
+            "title": "Last Year - Total Dept Expense",
+            "id": "last_year___total_dept_expense"
+          },
+          {
+            "title": "Actual - Operating Expense",
+            "id": "actual___operating_expense"
+          },
+          {
+            "title": "Forecast - Operating Expense",
+            "id": "forecast___operating_expense"
+          },
+          {
+            "title": "Budget - Operating Expense",
+            "id": "budget___operating_expense"
+          },
+          {
+            "title": "Last Year - Operating Expense",
+            "id": "last_year___operating_expense"
+          },
+          {
+            "title": "Actual - House Profit",
+            "id": "actual___house_profit"
+          },
+          {
+            "title": "Forecast - House Profit",
+            "id": "forecast___house_profit"
+          },
+          {
+            "title": "Budget - House Profit",
+            "id": "budget___house_profit"
+          },
+          {
+            "title": "Last Year - House Profit",
+            "id": "last_year___house_profit"
+          },
+          {
+            "title": "Actual - Fixed Expense",
+            "id": "actual___fixed_expense"
+          },
+          {
+            "title": "Forecast - Fixed Expense",
+            "id": "forecast___fixed_expense"
+          },
+          {
+            "title": "Budget - Fixed Expense",
+            "id": "budget___fixed_expense"
+          },
+          {
+            "title": "Last Year - Fixed Expense",
+            "id": "last_year___fixed_expense"
+          },
+          {
+            "title": "Actual - NOI B4 Interest/Other",
+            "id": "actual___noi_b4_interest_other"
+          },
+          {
+            "title": "Forecast - NOI B4 Interest/Other",
+            "id": "forecast___noi_b4_interest_other"
+          },
+          {
+            "title": "Budget - NOI B4 Interest/Other",
+            "id": "budget___noi_b4_interest_other"
+          },
+          {
+            "title": "Last Year - NOI B4 Interest/Other",
+            "id": "last_year___noi_b4_interest_other"
+          },
+          {
+            "title": "Actual - NOI",
+            "id": "actual___noi"
+          },
+          {
+            "title": "Forecast - NOI",
+            "id": "forecast___noi"
+          },
+          {
+            "title": "Budget - NOI",
+            "id": "budget___noi"
+          },
+          {
+            "title": "Last Year - NOI",
+            "id": "last_year___noi"
+          },
+          {
+            "title": "Actual - Owner Expense",
+            "id": "actual___owner_expense"
+          },
+          {
+            "title": "Forecast - Owner Expense",
+            "id": "forecast___owner_expense"
+          },
+          {
+            "title": "Budget - Owner Expense",
+            "id": "budget___owner_expense"
+          },
+          {
+            "title": "Last Year - Owner Expense",
+            "id": "last_year___owner_expense"
+          },
+          {
+            "title": "Actual - Net Income",
+            "id": "actual___net_income"
+          },
+          {
+            "title": "Forecast - Net Income",
+            "id": "forecast___net_income"
+          },
+          {
+            "title": "Budget - Net Income",
+            "id": "budget___net_income"
+          },
+          {
+            "title": "Last Year - Net Income",
+            "id": "last_year___net_income"
+          }
+        ]
+      }
+    },
+    {
+      "Accel II Properties - % Rev": {
+        "id": "2402934422",
+        "columns": [
+          {
+            "title": "Actual - Room Revenue",
+            "id": "actual___room_revenue"
+          },
+          {
+            "title": "Forecast - Room Revenue",
+            "id": "forecast___room_revenue"
+          },
+          {
+            "title": "Budget - Room Revenue",
+            "id": "budget___room_revenue"
+          },
+          {
+            "title": "Last Year - Room Revenue",
+            "id": "last_year___room_revenue"
+          },
+          {
+            "title": "Actual - Total Revenue",
+            "id": "actual___total_revenue"
+          },
+          {
+            "title": "Forecast - Total Revenue",
+            "id": "forecast___total_revenue"
+          },
+          {
+            "title": "Budget - Total Revenue",
+            "id": "budget___total_revenue"
+          },
+          {
+            "title": "Last Year - Total Revenue",
+            "id": "last_year___total_revenue"
+          },
+          {
+            "title": "Actual - Rooms Expense",
+            "id": "actual___rooms_expense"
+          },
+          {
+            "title": "Forecast - Rooms Expense",
+            "id": "forecast___rooms_expense"
+          },
+          {
+            "title": "Budget - Rooms Expense",
+            "id": "budget___rooms_expense"
+          },
+          {
+            "title": "Last Year - Rooms Expense",
+            "id": "last_year___rooms_expense"
+          },
+          {
+            "title": "Actual - Total Dept Expense",
+            "id": "actual___total_dept_expense"
+          },
+          {
+            "title": "Forecast - Total Dept Expense",
+            "id": "forecast___total_dept_expense"
+          },
+          {
+            "title": "Budget - Total Dept Expense",
+            "id": "budget___total_dept_expense"
+          },
+          {
+            "title": "Last Year - Total Dept Expense",
+            "id": "last_year___total_dept_expense"
+          },
+          {
+            "title": "Actual - Operating Expense",
+            "id": "actual___operating_expense"
+          },
+          {
+            "title": "Forecast - Operating Expense",
+            "id": "forecast___operating_expense"
+          },
+          {
+            "title": "Budget - Operating Expense",
+            "id": "budget___operating_expense"
+          },
+          {
+            "title": "Last Year - Operating Expense",
+            "id": "last_year___operating_expense"
+          },
+          {
+            "title": "Actual - House Profit",
+            "id": "actual___house_profit"
+          },
+          {
+            "title": "Forecast - House Profit",
+            "id": "forecast___house_profit"
+          },
+          {
+            "title": "Budget - House Profit",
+            "id": "budget___house_profit"
+          },
+          {
+            "title": "Last Year - House Profit",
+            "id": "last_year___house_profit"
+          },
+          {
+            "title": "Actual - Fixed Expense",
+            "id": "actual___fixed_expense"
+          },
+          {
+            "title": "Forecast - Fixed Expense",
+            "id": "forecast___fixed_expense"
+          },
+          {
+            "title": "Budget - Fixed Expense",
+            "id": "budget___fixed_expense"
+          },
+          {
+            "title": "Last Year - Fixed Expense",
+            "id": "last_year___fixed_expense"
+          },
+          {
+            "title": "Actual - NOI B4 Interest/Other",
+            "id": "actual___noi_b4_interest_other"
+          },
+          {
+            "title": "Forecast - NOI B4 Interest/Other",
+            "id": "forecast___noi_b4_interest_other"
+          },
+          {
+            "title": "Budget - NOI B4 Interest/Other",
+            "id": "budget___noi_b4_interest_other"
+          },
+          {
+            "title": "Last Year - NOI B4 Interest/Other",
+            "id": "last_year___noi_b4_interest_other"
+          },
+          {
+            "title": "Actual - NOI",
+            "id": "actual___noi"
+          },
+          {
+            "title": "Forecast - NOI",
+            "id": "forecast___noi"
+          },
+          {
+            "title": "Budget - NOI",
+            "id": "budget___noi"
+          },
+          {
+            "title": "Last Year - NOI",
+            "id": "last_year___noi"
+          },
+          {
+            "title": "Actual - Owner Expense",
+            "id": "actual___owner_expense"
+          },
+          {
+            "title": "Forecast - Owner Expense",
+            "id": "forecast___owner_expense"
+          },
+          {
+            "title": "Budget - Owner Expense",
+            "id": "budget___owner_expense"
+          },
+          {
+            "title": "Last Year - Owner Expense",
+            "id": "last_year___owner_expense"
+          },
+          {
+            "title": "Actual - Net Income",
+            "id": "actual___net_income"
+          },
+          {
+            "title": "Forecast - Net Income",
+            "id": "forecast___net_income"
+          },
+          {
+            "title": "Budget - Net Income",
+            "id": "budget___net_income"
+          },
+          {
+            "title": "Last Year - Net Income",
+            "id": "last_year___net_income"
+          }
+        ]
+      }
+    }
   ]
 }
