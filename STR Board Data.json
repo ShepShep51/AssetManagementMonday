@@ -851,99 +851,8 @@
   ],
   "Accel 2": [
     {
-      "Accel II Weekly STR-Properties": {
-        "id": "1915611388",
-        "column_data": [
-          {
-            "title": "Occupancy - Subject",
-            "id": "occupancy___subject"
-          },
-          {
-            "title": "Occupancy - Subject % Chg",
-            "id": "occupancy___subject___chg"
-          },
-          {
-            "title": "Occupancy - Comp Set",
-            "id": "occupancy___comp_set"
-          },
-          {
-            "title": "Occupancy - Comp Set % Chg",
-            "id": "occupancy___comp_set___chg"
-          },
-          {
-            "title": "Occupancy - Index",
-            "id": "occupancy___index"
-          },
-          {
-            "title": "Occupancy - Index % Chg",
-            "id": "occupancy___index___chg"
-          },
-          {
-            "title": "Occupancy Rank",
-            "id": "occupancy_rank"
-          },
-          {
-            "title": "ADR - Subject",
-            "id": "adr___subject"
-          },
-          {
-            "title": "ADR - Subject % Chg",
-            "id": "adr___subject___chg"
-          },
-          {
-            "title": "ADR - Comp Set",
-            "id": "adr___comp_set"
-          },
-          {
-            "title": "ADR - Comp Set % Chg",
-            "id": "adr___comp_set___chg"
-          },
-          {
-            "title": "ADR - Index",
-            "id": "adr___index"
-          },
-          {
-            "title": "ADR - Index % Chg",
-            "id": "adr___index___chg"
-          },
-          {
-            "title": "ADR Rank",
-            "id": "adr_rank"
-          },
-          {
-            "title": "RevPAR - Subject",
-            "id": "revpar___subject"
-          },
-          {
-            "title": "RevPAR - Subject % Chg",
-            "id": "revpar___subject___chg"
-          },
-          {
-            "title": "RevPAR - Comp Set",
-            "id": "revpar___comp_set"
-          },
-          {
-            "title": "RevPAR - Comp Set % Chg",
-            "id": "revpar___comp_set___chg"
-          },
-          {
-            "title": "RevPAR - Index",
-            "id": "revpar___index"
-          },
-          {
-            "title": "RevPAR - Index % Chg",
-            "id": "revpar___index___chg"
-          },
-          {
-            "title": "RevPAR Rank",
-            "id": "revpar_rank"
-          }
-        ]
-      }
-    },
-    {
-      "Accel II Weekly STR-Grand Total": {
-        "id": "1915609147",
+      "Accel II Monthly STR Grand Total": {
+        "id": "1915542825",
         "column_data": [
           {
             "title": "Occupancy - Subject",
@@ -1116,8 +1025,8 @@
       }
     },
     {
-      "Accel II Monthly STR Grand Total": {
-        "id": "1915542825",
+      "Accel II Weekly STR-Grand Total": {
+        "id": "1915609147",
         "column_data": [
           {
             "title": "Occupancy - Subject",
@@ -1166,6 +1075,97 @@
           {
             "title": "ADR - Index % Chg",
             "id": "adr___index___chg"
+          },
+          {
+            "title": "RevPAR - Subject",
+            "id": "revpar___subject"
+          },
+          {
+            "title": "RevPAR - Subject % Chg",
+            "id": "revpar___subject___chg"
+          },
+          {
+            "title": "RevPAR - Comp Set",
+            "id": "revpar___comp_set"
+          },
+          {
+            "title": "RevPAR - Comp Set % Chg",
+            "id": "revpar___comp_set___chg"
+          },
+          {
+            "title": "RevPAR - Index",
+            "id": "revpar___index"
+          },
+          {
+            "title": "RevPAR - Index % Chg",
+            "id": "revpar___index___chg"
+          },
+          {
+            "title": "RevPAR Rank",
+            "id": "revpar_rank"
+          }
+        ]
+      }
+    },
+    {
+      "Accel II Weekly STR-Properties": {
+        "id": "1915611388",
+        "column_data": [
+          {
+            "title": "Occupancy - Subject",
+            "id": "occupancy___subject"
+          },
+          {
+            "title": "Occupancy - Subject % Chg",
+            "id": "occupancy___subject___chg"
+          },
+          {
+            "title": "Occupancy - Comp Set",
+            "id": "occupancy___comp_set"
+          },
+          {
+            "title": "Occupancy - Comp Set % Chg",
+            "id": "occupancy___comp_set___chg"
+          },
+          {
+            "title": "Occupancy - Index",
+            "id": "occupancy___index"
+          },
+          {
+            "title": "Occupancy - Index % Chg",
+            "id": "occupancy___index___chg"
+          },
+          {
+            "title": "Occupancy Rank",
+            "id": "occupancy_rank"
+          },
+          {
+            "title": "ADR - Subject",
+            "id": "adr___subject"
+          },
+          {
+            "title": "ADR - Subject % Chg",
+            "id": "adr___subject___chg"
+          },
+          {
+            "title": "ADR - Comp Set",
+            "id": "adr___comp_set"
+          },
+          {
+            "title": "ADR - Comp Set % Chg",
+            "id": "adr___comp_set___chg"
+          },
+          {
+            "title": "ADR - Index",
+            "id": "adr___index"
+          },
+          {
+            "title": "ADR - Index % Chg",
+            "id": "adr___index___chg"
+          },
+          {
+            "title": "ADR Rank",
+            "id": "adr_rank"
           },
           {
             "title": "RevPAR - Subject",
@@ -1286,6 +1286,118 @@
           },
           {
             "title": "RevPAR Rank",
+            "id": "revpar_rank"
+          }
+        ]
+      }
+    },
+    {
+      "VABQOZ Weekly STR": {
+        "id": "1915629077",
+        "column_data": [
+          {
+            "title": "Occupancy - Subject",
+            "type": "numeric",
+            "id": "occupancy___subject"
+          },
+          {
+            "title": "Occupancy - Subject % Chg",
+            "type": "numeric",
+            "id": "occupancy___subject___chg"
+          },
+          {
+            "title": "Occupancy - Comp Set",
+            "type": "numeric",
+            "id": "occupancy___comp_set"
+          },
+          {
+            "title": "Occupancy - Comp Set % Chg",
+            "type": "numeric",
+            "id": "occupancy___comp_set___chg"
+          },
+          {
+            "title": "Occupancy - Index",
+            "type": "numeric",
+            "id": "occupancy___index"
+          },
+          {
+            "title": "Occupancy - Index % Chg",
+            "type": "numeric",
+            "id": "occupancy___index___chg"
+          },
+          {
+            "title": "Occupancy Rank",
+            "type": "text",
+            "id": "occupancy_rank"
+          },
+          {
+            "title": "ADR - Subject",
+            "type": "numeric",
+            "id": "adr___subject"
+          },
+          {
+            "title": "ADR - Subject % Chg",
+            "type": "numeric",
+            "id": "adr___subject___chg"
+          },
+          {
+            "title": "ADR - Comp Set",
+            "type": "numeric",
+            "id": "adr___comp_set"
+          },
+          {
+            "title": "ADR - Comp Set % Chg",
+            "type": "numeric",
+            "id": "adr___comp_set___chg"
+          },
+          {
+            "title": "ADR - Index",
+            "type": "numeric",
+            "id": "adr___index"
+          },
+          {
+            "title": "ADR - Index % Chg",
+            "type": "numeric",
+            "id": "adr___index___chg"
+          },
+          {
+            "title": "ADR Rank",
+            "type": "text",
+            "id": "adr_rank"
+          },
+          {
+            "title": "RevPAR - Subject",
+            "type": "numeric",
+            "id": "revpar___subject"
+          },
+          {
+            "title": "RevPAR - Subject % Chg",
+            "type": "numeric",
+            "id": "revpar___subject___chg"
+          },
+          {
+            "title": "RevPAR - Comp Set",
+            "type": "numeric",
+            "id": "revpar___comp_set"
+          },
+          {
+            "title": "RevPAR - Comp Set % Chg",
+            "type": "numeric",
+            "id": "revpar___comp_set___chg"
+          },
+          {
+            "title": "RevPAR - Index",
+            "type": "numeric",
+            "id": "revpar___index"
+          },
+          {
+            "title": "RevPAR - Index % Chg",
+            "type": "numeric",
+            "id": "revpar___index___chg"
+          },
+          {
+            "title": "RevPAR Rank",
+            "type": "text",
             "id": "revpar_rank"
           }
         ]

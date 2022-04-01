@@ -38,8 +38,9 @@ class Board:
     def __init__(self, j_file, fund, idx):
         self.j_file = j_file
         self.fund = fund
-        self.fund_boards = self.j_file[self.fund]
         self.idx = idx
+        # self.upload = upload
+        self.fund_boards = self.j_file[self.fund] # [self.upload]
         self.board_key = self.fund_boards[self.idx].keys()
         self.boardID()
         # self.board_id = '2391151700'
@@ -53,8 +54,16 @@ class Board:
             self.board_id = self.fund_boards[self.idx][k]['id']
             self.board_format = self.fund_boards[self.idx][k]['column_data']
 
+class PerformanceBoard():
+    def __init__(self, board_file, fund, name,upload = 'Performance'):
+        self.fund = fund
+        self.boards = board_file[fund][upload]
+        self.board_id = board_file[fund][upload][name]['id']
+        self.column_data = board_file[fund][upload][name]['columns']
 
-class Group(Board):
+
+
+class Group():
     def __init__(self, board, name):
         self.board_id = board.board_id
         self.board_format = board.board_format
@@ -71,7 +80,7 @@ class Group(Board):
 
 
     ...
-class Pulse(Group):
+class Pulse():
     def __init__(self, group, name, metrics):
         self.board_id = group.board_id
         self.group_id = group.group_id
@@ -107,6 +116,8 @@ class Pulse(Group):
         r = r.json()
 
     ...
+
+
 
 def data_pull(worksheet_obj, column_limits):
     fund_dict = {'LOF REIT - Fund 2': [], 'LF3 REIT - Fund 3': [], 'Legendary Lodging VAB QOZ': [], 'ACCEL II': []}
@@ -187,14 +198,52 @@ with open('test_data.json', 'r') as infile:
 
 with open('MasterBoardData.json','r') as infile:
     master = json.load(infile)
-k = []
-for i in range(len(financial_board_format['Accel II'])):
 
-    for j in financial_board_format['Accel II'][i]:
-        print(j)
-        master['ACCEL II']['Performance'][j] = financial_board_format['Accel II'][i][j]
+#            if op['Fund'] == '2':
+#            logging.info('Uploading Financial Data for LOF 2')
+#            gt_board_format = financial_board_format['LOF2'][:3]
+#            property_board_format = financial_board_format['LOF2'][3:]
+#            limit, group_name = grandTotalDataPost(worksheet_object=ws, format_list=gt_board_format)
+#            propertyDataPost(worksheet_object=ws,last_column=limit,format_list=property_board_format,name_of_group=group_name)
+
+# wb = xw.Book(test_path)
+# ws = wb.sheets['Dec 2021']
 
 
+def performanceDataPull(worksheet_object):
+    data = {}
+    last_col = worksheet_object.range(3, worksheet_object.cells.last_cell.column).end('left').column
+    row_lookup = ['Room Revenue', 'Total Revenue', 'Rooms Expense', 'Total Dept Expense', 'Operating Expense',
+                'House Profit', 'Fixed Expense', 'NOI B4 Interest/Other', 'NOI', 'Owner Expense', 'Net Income','Occupied Rooms']
+    column_lookup = ['Actual', 'Forecast', 'Budget', 'Last Year']
+    r_list = []
+    c_list = []
+    for i in range(1,11):
+        if worksheet_object.range(3,i).value in column_lookup:
+            c_list.append(i)
+    for i in range(4,30):
+        if worksheet_object.range(i,1).value in row_lookup:
+            r_list.append(i)
+    denom_row = r_list[0]+1
+    occ_row = r_list.pop(len(r_list)-1)
+    while worksheet_object.range(2,c_list[0]).value is not None:
+        data[worksheet_object.range(2,c_list[0]).value] = {'Actual':[],'Percent':[],'POR':[]}
+        for r in r_list:
+            for c in c_list:
+                data[worksheet_object.range(2, c_list[0]).value]['Actual'].append(worksheet_object.range(r,c).value)
+                try:
+                    data[worksheet_object.range(2, c_list[0]).value]['Percent'].append(float("{0:.2f}".format((worksheet_object.range(r,c).value/worksheet_object.range(denom_row,c).value)*100)))
+                except ZeroDivisionError:
+                    data[worksheet_object.range(2, c_list[0]).value]['Percent'].append(0)
+                try:
+                    data[worksheet_object.range(2, c_list[0]).value]['POR'].append(float("{0:.2f}".format((worksheet_object.range(r,c).value/worksheet_object.range(occ_row,c).value))))
+                except ZeroDivisionError:
+                    data[worksheet_object.range(2, c_list[0]).value]['POR'].append(0)
+        c_list = [x+10 for x in c_list]
+    return data
 
-with open('MasterBoardData.json','w') as outfile:
-    json.dump(master,outfile,indent=2)
+x = PerformanceBoard(master, 'LF3', 'LF3 Grand Total - Actual')
+print(x.board_id)
+
+if __name__ == "__main__":
+    pass

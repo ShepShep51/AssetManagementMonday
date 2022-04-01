@@ -249,6 +249,7 @@ def grandTotalUpload(board_id, tab, grand_total_row, column_limits, worksheet_ob
     try:
         group_id = groupCreate(board_ident=board_id,group_name=tab)
         gt_data = propertyData(row=grand_total_row, columnlimits=column_limits, worksheet_object=worksheet_object, gt_status=True)
+        print(gt_data)
         gt_name = gt_data['Name']
         gt_data = gt_data['Data']
         gt_string = stringBuilder(formatting=format,metrics=gt_data)
@@ -678,7 +679,18 @@ def Main():
                     propertyUpload(board_id=prop_board_id, tab=tab_to_open, reit_limits=accel_lims,
                                    column_limits=column_lims, worksheet_object=ws, abrev=fund_abrev, format=prop_format)
             elif op['Fund'] == '5':
-                ...
+                board_data = bd_fmt['VABQOZ']
+                fund_abrev = abrev['VAB QOZ']
+                if op['Timeframe'] =='2':
+                    board_id = board_data[0]["VABQOZ Monthly STR Properties"]['id']
+                    fmat = board_data[0]["VABQOZ Monthly STR Properties"]['column_data']
+                    propertyUpload(board_id=board_id, tab=tab_to_open, reit_limits=vab_lims,
+                                   column_limits=column_lims, worksheet_object=ws, abrev=fund_abrev, format=fmat)
+                elif op['Timeframe'] == '1':
+                    board_id = board_data[1]["VABQOZ Weekly STR"]['id']
+                    fmat = board_data[1]["VABQOZ Weekly STR"]['column_data']
+                    propertyUpload(board_id=board_id, tab=tab_to_open, reit_limits=vab_lims,
+                                   column_limits=column_lims, worksheet_object=ws, abrev=fund_abrev, format=fmat)
             elif op['Fund'] == '1':
                 if op['Timeframe'] == '2':
                     board_data = bd_fmt['lof2']
