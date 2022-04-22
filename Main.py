@@ -654,12 +654,12 @@ def Main():
                 fund_abrev = abrev['Accel 2']
                 if op['Timeframe'] == '2':
                     logging.info('Uploading Monthly Data for Accel 2')
-                    gt_board_id = board_data[3]["Accel II Monthly STR Grand Total"]['id']
-                    gt_format = board_data[3]["Accel II Monthly STR Grand Total"]['column_data']
+                    gt_board_id = board_data[0]["Accel II Monthly STR Grand Total"]['id']
+                    gt_format = board_data[0]["Accel II Monthly STR Grand Total"]['column_data']
                     gt_format = gt_format[:-1]
                     # Setting Property variables
-                    prop_board_id = board_data[2]["Accel II Monthly STR-Properties"]['id']
-                    prop_format = board_data[2]["Accel II Monthly STR-Properties"]['column_data']
+                    prop_board_id = board_data[1]["Accel II Monthly STR-Properties"]['id']
+                    prop_format = board_data[1]["Accel II Monthly STR-Properties"]['column_data']
                     grandTotalUpload(board_id=gt_board_id, tab=tab_to_open, grand_total_row=gt_row,
                                      column_limits=column_lims, worksheet_object=ws, format=gt_format)
                     # Properties Upload
@@ -667,12 +667,12 @@ def Main():
                                    column_limits=column_lims, worksheet_object=ws, abrev=fund_abrev, format=prop_format)
                 elif op['Timeframe'] == '1':
                     logging.info('Uploading Weekly Data for Accel 2')
-                    gt_board_id = board_data[1]["Accel II Weekly STR-Grand Total"]['id']
-                    gt_format = board_data[1]["Accel II Weekly STR-Grand Total"]['column_data']
+                    gt_board_id = board_data[2]["Accel II Weekly STR-Grand Total"]['id']
+                    gt_format = board_data[2]["Accel II Weekly STR-Grand Total"]['column_data']
                     gt_format = gt_format[:-1]
                     # Setting Property variables
-                    prop_board_id = board_data[0]["Accel II Weekly STR-Properties"]['id']
-                    prop_format = board_data[0]["Accel II Weekly STR-Properties"]['column_data']
+                    prop_board_id = board_data[3]["Accel II Weekly STR-Properties"]['id']
+                    prop_format = board_data[3]["Accel II Weekly STR-Properties"]['column_data']
                     grandTotalUpload(board_id=gt_board_id, tab=tab_to_open, grand_total_row=gt_row,
                                      column_limits=column_lims, worksheet_object=ws, format=gt_format)
                     # Properties Upload
