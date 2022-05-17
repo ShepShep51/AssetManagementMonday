@@ -11,16 +11,16 @@ import datetime as dt
 import openpyxl as pxl
 import tkinter.filedialog
 
+
+# Setting constants
 apiKey = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjEyNDU2NTYzMywidWlkIjoyNDYzODQ0MSwiaWFkIjoiMjAyMS0wOS0xNFQxMzozMzozNS4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NDMzODY1LCJyZ24iOiJ1c2UxIn0.pWJkEFC3rxdwtYOMgbyvmDoI6xjRYxqZVbIdBmUfa6k"
 apiUrl = "https://api.monday.com/v2"
 headers = {"Authorization": apiKey}
-
 column_lims = [4,27]
 
-def browser():
-    root = tk.Tk()
-    #root.withdraw()
 
+def browser():  # Used to select the file which contains data to be uploaded
+    root = tk.Tk()
     currdir = os.getcwd()
     tempdir = tkinter.filedialog.askopenfilename(parent=root, initialdir=currdir, title='Select File You Want To Convert')
     root.destroy()
@@ -28,7 +28,7 @@ def browser():
     return tempdir
 
 
-def dataUploadOption():
+def dataUploadOption():  # Function to gather data about what information will be uploaded
     print("What data would you like to upload?")
     upload = input(
         "Press [1] to upload STR Data, [2] to upload Financial Data, [3] to upload NCF Data, or [0] to return to home ")
@@ -43,7 +43,6 @@ def dataUploadOption():
                    'Timeframe': tf}
         logging.info('Upload Type: {a}, Fund: {b}, Timeframe: {c}'.format(a=upload, b=fund, c=tf))
         return choices
-        ...
     elif upload == '2':
         print("Which fund are you uploading?")
         fund = input("Press [2] for LOF2, [3] for LF3, [4] for Accel 2, or [5] for VAB QOZ: ")
@@ -52,7 +51,6 @@ def dataUploadOption():
                    'Timeframe': None}
         logging.info('Upload Type: {a}, Fund: {b}, Timeframe: {c}'.format(a=upload, b=fund, c=None))
         return choices
-        ...
     elif upload == '3':
         print("Which fund are you uploading?")
         fund = input("Press [2] for LOF2, or [3] for LF3 ")
@@ -61,7 +59,6 @@ def dataUploadOption():
                    'Timeframe': None}
         logging.info('Upload Type: {a}, Fund: {b}, Timeframe: {c}'.format(a=upload, b=fund, c=None))
         return choices
-        ...
     elif upload == '0':
         options()
         ...
@@ -70,7 +67,8 @@ def dataUploadOption():
         dataUploadOption()
     return
 
-def abrevDataOption():
+
+def abrevDataOption():  # Function to add an abbreviation to the property list
     with open('PropertyAbbreviations.JSON', 'r') as test:
         test_list = json.load(test)
     print("Which fund are you updating?")
@@ -110,13 +108,14 @@ def abrevDataOption():
         with open('PropertyAbbreviations.JSON', 'w') as json_file:
             json.dump(test_list, json_file, indent=2)
 
-def options():
+
+def options():  # Main option function to choose between uploading data or modifying an abbreviation
     print("Would you like to upload data or access property abbreviations?")
-    nuts = input("Press [1] to upload data, press [2] to access propery abbreviations, or [0] to exit ")
-    if nuts == "1": # Uploading data to Monday.com
+    nuts = input("Press [1] to upload data, press [2] to access property abbreviations, or [0] to exit ")
+    if nuts == "1":  # Uploading data to Monday.com
         choices = dataUploadOption()
         return choices
-    elif nuts == "2": # Updating or adding property abbreviations
+    elif nuts == "2":  # Updating or adding property abbreviations
         abrevDataOption()
         options()
     elif nuts == '0':
@@ -128,26 +127,27 @@ def options():
         return
 
 
-def data_pull(worksheet_obj):
+def data_pull(worksheet_obj):  # Function used on a STR Report to determine on what rows each fund begins and ends.
     fund_dict = {'LOF REIT - Fund 2': [], 'LF3 REIT - Fund 3': [], 'Legendary Lodging VAB QOZ': [], 'ACCEL II': []}
-    last_row = worksheet_obj.range(worksheet_obj.cells.last_cell.row, 2).end('up').row
-    for row in range(1, last_row):
-        if worksheet_obj.range(row, 2).value in fund_dict.keys():
-            fund_dict[worksheet_obj.range(row, 2).value].append(row +1)
-            for i in range(row+1,row + 21):
-                if worksheet_obj.range(i, 3).value is None or worksheet_obj.range(i, 3).value == 'Total LF3 Core Portfolio':
-                    fund_dict[worksheet_obj.range(row, 2).value].append(i - 1)
+    last_row = worksheet_obj.range(worksheet_obj.cells.last_cell.row, 2).end('up').row  # Finds last row used in the Excel sheet
+    for row in range(1, last_row):  # For each row number in between the first row and the last row as found by the previous line of code
+        if worksheet_obj.range(row, 2).value in fund_dict.keys():  # If the value of the cell in the current row, in column 2 is any of the keys in fund_dict
+            fund_dict[worksheet_obj.range(row, 2).value].append(row +1)  # Append that row number + 1 to the corresponding list
+            for i in range(row+1, row + 21):  # Search every row in the next 21 rows
+                if worksheet_obj.range(i, 3).value is None or worksheet_obj.range(i, 3).value == 'Total LF3 Core Portfolio':  # Finds the next cell in column 3 that is blank.
+                    fund_dict[worksheet_obj.range(row, 2).value].append(i - 1)  # Append the current row - 1 to the corresponding list
                     break
     return fund_dict
 
 
-def newPulse(board_ident,group_ident,name_of_pulse,data_string):
+def newPulse(board_ident, group_ident, name_of_pulse, data_string):
     try:
         mutation = 'mutation {create_item (board_id: %s, item_name: "%s", group_id: "%s", column_values: "{%s}") {id}}' % (board_ident, name_of_pulse, group_ident,data_string)
+        # The above line fills in a string to post to the Monday.com server to create a new pulse with data in the columns
         data = {'query': mutation}
-        r = requests.post(url=apiUrl,json=data,headers=headers)
-        response_data = r.json()
-        item_id = response_data['data']['create_item']['id']
+        r = requests.post(url=apiUrl, json=data, headers=headers)  # Posting the string to Monday.com
+        response_data = r.json()  # Response from Monday.com server
+        item_id = response_data['data']['create_item']['id']  # From the response, extracts the newly created pulse's ID
         logging.info('Pulse Created: {a}, Item ID: {b}'.format(a=name_of_pulse, b=item_id))
         return item_id
     except Exception as e:
@@ -157,11 +157,12 @@ def newPulse(board_ident,group_ident,name_of_pulse,data_string):
 def groupCreate(board_ident, group_name):
     try:
         mutation = 'mutation {create_group (board_id: %s, group_name: "%s"){id}}' % (board_ident, group_name)
+        # Formats a string to create a new group on a Monday.com board
         data = {'query': mutation}
-        r = requests.post(url=apiUrl, json=data, headers=headers)
-        response = r.json()
+        r = requests.post(url=apiUrl, json=data, headers=headers)  # Posts the string to the Monday.com server
+        response = r.json()  # Response from the Monday.com server
         print(response)
-        group_id = response['data']['create_group']['id']
+        group_id = response['data']['create_group']['id']  # Extracts the group's ID from the server response
         logging.info('Group {a} created on board {b}. ID:{c}'.format(a=group_name,b=board_ident,c=group_id))
         return group_id
     except Exception as e:
@@ -169,13 +170,13 @@ def groupCreate(board_ident, group_name):
 
 
 def tabSelect(timeframe, workbook_object):
-    if timeframe =='2':
+    if timeframe =='2':  # If the monthly timeframe is selected
         tabs = []
         indexes = []
-        for i in range(0, len(workbook_object.sheets)):
-            if workbook_object.sheets[i].name.find('Monthly') > 0:
-                tabs.append(workbook_object.sheets[i].name)
-                indexes.append(i)
+        for i in range(0, len(workbook_object.sheets)):  # For every sheet in the workbook
+            if workbook_object.sheets[i].name.find('Monthly') > 0:  # If the sheet name contains the word 'Monthly'
+                tabs.append(workbook_object.sheets[i].name)  # Append the name to the 'Tabs' list
+                indexes.append(i)  # Append the index to the 'Indexes' list
         tabs = tabs[-5:]
         indexes = indexes[-5:]
         print("Select what data you'd like to upload:")
